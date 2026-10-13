@@ -1,0 +1,17 @@
+{
+  "nombre": "Taza esmaltada",
+  "foto": "/media/tazas.jpg",
+  "precio": 18000,
+  "categoria": "tazas",
+  "estado": "disponible",
+  "esmaltes": [
+    "turquesa",
+    "ocre",
+    "azul"
+  ],
+  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "medidas": "",
+  "cuidados": "",
+  "destacada": true,
+  "publicada": true
+}

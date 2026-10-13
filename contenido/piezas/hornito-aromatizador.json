@@ -1,0 +1,15 @@
+{
+  "nombre": "Hornito aromatizador",
+  "foto": "/media/hornito.jpg",
+  "precio": 19000,
+  "categoria": "luz-y-aromas",
+  "estado": "agotado",
+  "esmaltes": [
+    "azul-profundo"
+  ],
+  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "medidas": "",
+  "cuidados": "",
+  "destacada": false,
+  "publicada": true
+}

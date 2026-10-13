@@ -1,0 +1,16 @@
+{
+  "nombre": "Jarrito matero",
+  "foto": "/media/jarrito.jpg",
+  "precio": 16500,
+  "categoria": "tazas",
+  "estado": "disponible",
+  "esmaltes": [
+    "gris",
+    "azul"
+  ],
+  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "medidas": "",
+  "cuidados": "",
+  "destacada": true,
+  "publicada": true
+}

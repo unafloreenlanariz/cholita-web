@@ -1,0 +1,16 @@
+{
+  "nombre": "Juego de cuencos",
+  "precio": 56000,
+  "categoria": "juegos",
+  "estado": "encargo",
+  "esmaltes": [
+    "azul",
+    "verde",
+    "rosado"
+  ],
+  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "medidas": "",
+  "cuidados": "",
+  "destacada": false,
+  "publicada": true
+}

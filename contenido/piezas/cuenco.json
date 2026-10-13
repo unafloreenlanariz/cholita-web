@@ -1,0 +1,18 @@
+{
+  "nombre": "Cuenco",
+  "foto": "/media/cuencos.jpg",
+  "precio": 15000,
+  "categoria": "cuencos",
+  "estado": "disponible",
+  "esmaltes": [
+    "azul",
+    "verde",
+    "rosado",
+    "turquesa"
+  ],
+  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "medidas": "",
+  "cuidados": "",
+  "destacada": true,
+  "publicada": true
+}

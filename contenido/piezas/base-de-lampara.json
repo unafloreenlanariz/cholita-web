@@ -1,0 +1,16 @@
+{
+  "nombre": "Base de lámpara",
+  "foto": "/media/lamparas.jpg",
+  "precio": 38000,
+  "categoria": "luz-y-aromas",
+  "estado": "encargo",
+  "esmaltes": [
+    "rojo",
+    "turquesa"
+  ],
+  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "medidas": "",
+  "cuidados": "",
+  "destacada": true,
+  "publicada": true
+}

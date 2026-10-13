@@ -1,0 +1,15 @@
+{
+  "nombre": "Salero con tapa",
+  "precio": 14000,
+  "categoria": "saleros",
+  "estado": "disponible",
+  "esmaltes": [
+    "verde",
+    "azul"
+  ],
+  "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "medidas": "",
+  "cuidados": "",
+  "destacada": false,
+  "publicada": true
+}
