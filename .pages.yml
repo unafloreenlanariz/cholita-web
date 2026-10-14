@@ -1,0 +1,121 @@
+# Configuración del editor de Aime (Pages CMS).
+# Define qué puede editar Aime desde el celular. No hace falta tocarlo.
+
+media:
+  input: media
+  output: /media
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: piezas
+    label: Mis piezas
+    type: collection
+    path: contenido/piezas
+    filename: "{primary}.json"
+    format: json
+    view:
+      primary: nombre
+      fields: [nombre, precio, estado]
+    fields:
+      - name: nombre
+        label: Nombre de la pieza
+        type: string
+        required: true
+        description: "Por ejemplo: Taza esmaltada"
+      - name: foto
+        label: Foto
+        type: image
+        description: "Una foto clara de la pieza, mejor con luz natural. Puede ser directo de la galería del celular."
+      - name: precio
+        label: Precio en pesos
+        type: number
+        required: true
+        description: "Solo el número, sin puntos ni signo $. Por ejemplo: 18000"
+        options:
+          min: 0
+      - name: categoria
+        label: Categoría
+        type: select
+        required: true
+        default: tazas
+        options:
+          values:
+            - { value: tazas, label: "Tazas y jarritos" }
+            - { value: cuencos, label: "Cuencos" }
+            - { value: platos, label: "Platos" }
+            - { value: saleros, label: "Saleros" }
+            - { value: luz-y-aromas, label: "Luz y aromas" }
+            - { value: juegos, label: "Juegos" }
+      - name: estado
+        label: Estado
+        type: select
+        required: true
+        default: disponible
+        options:
+          values:
+            - { value: disponible, label: "Disponible" }
+            - { value: encargo, label: "Por encargo" }
+            - { value: agotado, label: "Agotado por ahora" }
+      - name: esmaltes
+        label: Esmaltes en los que la hacés
+        type: select
+        description: "Elegí uno o varios. La primera opción aparece marcada en la web."
+        options:
+          multiple: true
+          values:
+            - { value: turquesa, label: "Turquesa" }
+            - { value: ocre, label: "Ocre tostado" }
+            - { value: azul, label: "Azul" }
+            - { value: azul-profundo, label: "Azul profundo" }
+            - { value: gris, label: "Gris tostado" }
+            - { value: verde, label: "Verde" }
+            - { value: rosado, label: "Rosado" }
+            - { value: rojo, label: "Rojo óxido" }
+      - name: descripcion
+        label: Descripción
+        type: text
+        description: "Dos o tres oraciones sobre la pieza, como se la contarías a alguien."
+      - name: medidas
+        label: Medidas
+        type: string
+        description: "Por ejemplo: 9 cm de alto, 300 ml"
+      - name: cuidados
+        label: Cuidados
+        type: string
+        description: "Por ejemplo: Apta lavavajillas y microondas"
+      - name: destacada
+        label: Mostrar en el inicio
+        type: boolean
+        default: false
+        description: "Se muestran hasta 4 piezas destacadas en la página de inicio."
+      - name: publicada
+        label: Visible en la web
+        type: boolean
+        default: true
+        description: "Desactivalo para ocultar la pieza sin borrarla."
+
+  - name: sitio
+    label: Mis datos de contacto
+    type: file
+    path: contenido/sitio.json
+    format: json
+    fields:
+      - name: whatsapp
+        label: Número de WhatsApp
+        type: string
+        required: true
+        description: "Con 549 y código de área, sin espacios ni signos. Por ejemplo: 5492944353936"
+      - name: instagram
+        label: Usuario de Instagram
+        type: string
+        description: "Sin la @. Por ejemplo: cholita.ceramica"
+      - name: mensaje_whatsapp
+        label: Mensaje que se escribe solo al tocar WhatsApp
+        type: string
+        description: "Es lo que le aparece escrito a quien te contacta. Por ejemplo: Hola Aime! Te escribo desde tu web."
+      - name: bio
+        label: Sobre mí (primer párrafo)
+        type: text
+      - name: bio2
+        label: Sobre mí (segundo párrafo)
+        type: text
